@@ -25,23 +25,46 @@
             </li>
           </ul>
         </header>
-        <div class="mb-3">
-            <label for="formGroupExampleInput" class="form-label">Example label</label>
-            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input placeholder">
-          </div>
-          <div class="mb-3">
-            <label for="formGroupExampleInput2" class="form-label">Another label</label>
-            <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Another input placeholder">
-          </div>
-          <div class="mb-3">
-            <label for="formGroupExampleInput" class="form-label">Example label</label>
-            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input placeholder">
-          </div>
-          <div class="mb-3">
-            <label for="formGroupExampleInput2" class="form-label">Another label</label>
-            <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Another input placeholder">
-          </div>
-
+        <div class="container-mt-5">
+            <section class="row">
+             <article class="col">
+                <form></form>
+                  <div class="mb-3">
+                  <label for="NombreInput" class="form-label">Nombre</label>
+                 <input type="text" class="form-control" id="NombreInput" autocomplete="off">
+                 </div>
+                    <div class="mb-3">
+                 <label for="ApellidoInput" class="form-label">Apellido</label>
+                 <input type="text" class="form-control" id="ApellidoInput" autocomplete="off">
+                    </div>
+                  <div class="mb-3">
+                   <label for="correoelectronicoInput" class="form-label">Correo Electronico</label>
+                   <input type="text" class="form-control" id="correoelectronicoInput" autocomplete="off">
+                   </div>
+                  <div class="mb-3">
+                 <label for="NumeroTelefonicoinput" class="form-label">Numero Telefonico</label>
+                 <input type="text" class="form-control" id="NumeroTelefonicoinput" autocomplete="off">
+                   </div>
+                    <button type="button" class="btn btn-success" onclick="agregarUsuario()">Agregar</button>
+                  <button type="button" class="btn btn-info" onclick="mostrarUsuario()">Mostrar</button>
+                 </form>               
+             </article>
+             <article> 
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Nombre</th>
+                            <th scope="col">Apellido</th>
+                            <th scope="col">Correo</th>
+                            <th scope="col">Telefono</th>
+                        </tr>
+                    </thead>
+                    <tbody id="cuerpoTabla"></tbody>
+                </table>
+             </article>
+            </section>
+        </div>
     <script src="./js/localstorage.js"></script>
 </body>
 </html>
