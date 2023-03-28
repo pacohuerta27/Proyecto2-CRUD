@@ -45,7 +45,12 @@
                  <label for="NumeroTelefonicoinput" class="form-label">Numero Telefonico</label>
                  <input type="text" class="form-control" id="NumeroTelefonicoinput" autocomplete="off">
                    </div>
-                    <button type="button" class="btn btn-success" onclick="agregarUsuario()">Agregar</button>
+                   <div class="mb-3">
+                    <label for="idInput" class="form-label">ID</label>
+                   <input type="text" class="form-control" id="idInput" autocomplete="off" disabled >
+                   </div>
+                   <button id = "btnEditar" type="button" class="btn btn-warning" onclick="confirmarEdicion()" style="display: none">Editar</button>
+                    <button id = "btnAgregar" type="button" class="btn btn-success" onclick="agregarUsuario()">Agregar</button>
                   <button type="button" class="btn btn-info" onclick="mostrarUsuarios()">Mostrar</button>
                  </form>               
              </article>
